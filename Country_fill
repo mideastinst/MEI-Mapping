@@ -1,0 +1,202 @@
+
+ /*Oranges */
+@level1: #d15300;
+@level2: #ff9320;
+@level3: #ffbd42;
+@level4: #ffd182;
+
+
+/*Red, Orange, Yellow, Green */ 
+/*
+@level1: #41ff00;
+@level2: #f1ff00;
+@level3: #f68d25;
+@level4: #ff0000;
+*/
+
+@op: 0.55;
+
+#countries[NAME= 'Afghanistan'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Algeria'] {
+  polygon-fill: @level2;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Armenia'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Azerbaijan'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Bahrain'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries [NAME_SORT = 'Baykonur Cosmodrome']{
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Egypt'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Gaza'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Georgia'] {
+  polygon-fill: @level2;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Iran'] {
+  polygon-fill: @level2;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Iraq'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Israel'] {
+  polygon-fill: @level2;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Jordan'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Kazakhstan'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Kuwait'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Kyrgyzstan'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Lebanon'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Libya'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Mauritania'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Morocco'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Oman'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Pakistan'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Qatar'] {
+  polygon-fill: @level3;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Saudi Arabia'] {
+  polygon-fill: @level2;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Sudan'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Syria'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Tajikistan'] {
+  polygon-fill: @level2;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Tunisia'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Turkey'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Turkmenistan'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'United Arab Emirates'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Uzbekistan'] {
+  polygon-fill: @level1;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'West Bank'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+#countries[NAME= 'Yemen'] {
+  polygon-fill: @level4;
+  polygon-opacity: @op;
+}
+
+
+#Topography{
+  raster-opacity: 1;
+/*  z-index: -1;*/
+}
+
+/*because the map is completely covered by 
+the geotiff, the following command does nothing. 
+It might be possible to layer the map so as 
+to adjust the ocean color*/
+
+Map {
+  background-color: #838383;
+}

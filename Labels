@@ -1,0 +1,300 @@
+@sans:"Droid Sans Book","Arial Regular","DejaVu Sans Book";
+@sans_bold:"Droid Sans Bold","Arial Bold","DejaVu Sans Bold";
+
+#Cities {
+  text-name:"[NAME]";
+  text-face-name:@sans;
+  text-size: 10;
+  text-halo-radius: 1;
+  text-halo-fill:rgba(255,255,255,0.75);
+  text-dy: 8;
+  text-label-position-tolerance: 100;
+  text-character-spacing: 1;
+
+  [zoom < 6]
+       {
+      text-size: 0;
+      text-halo-radius: 0;
+  }
+
+  #Cities[NAME = 'Al Khalil'],
+  #Cities[NAME = 'Nablus'],
+  #Cities[NAME = 'Ramla'],
+  #Cities[NAME = 'Gaza'],
+  #Cities[NAME = 'Nazareth']
+      {
+      text-size: 0;
+      text-halo-radius: 0;
+  }
+  
+  text-placement-type: simple;
+  text-allow-overlap: false; 
+  text-avoid-edges: true;
+}
+
+
+#countries3 {
+  text-name:'[NAME]';
+  text-face-name:@sans_bold;
+  text-fill: #000;
+  text-size:10;
+  text-halo-radius: 1;
+  text-halo-fill: #ffffff;
+  text-placement-type: simple;  
+  text-allow-overlap: true; 
+    text-dy: 0;
+
+  #countries3[ADMIN = 'Gaza']{
+    text-dy: 0;
+    }  
+  
+    #countries3[ADMIN = 'West Bank']{
+    text-dy: -5;
+    }  
+  
+    #countries3[ADMIN = 'Armenia']{
+      text-dy: -5;
+    }  
+  
+    #countries3[ADMIN = 'Azerbaijan']{
+      text-dy: 5;
+    }  
+  
+    #countries3[ADMIN = 'Lebanon']{
+    text-dy: -5;
+    }  
+  
+    #countries3[ADMIN = 'Oman']{
+      text-dy: -10;
+      text-dx: 10;
+    }  
+  
+   [zoom=7]{
+      #countries3[ADMIN = 'Spain']{
+      text-dy: -600;
+      text-dx: 450;
+    }  
+  
+      #countries3[ADMIN = 'Portugal']{
+      text-dy: -250;
+      text-dx: 750;
+    }
+    }
+  
+   [zoom=6]{
+      #countries3[ADMIN = 'Spain']{
+      text-dy: -300;
+      text-dx: 230;
+    }  
+  
+      #countries3[ADMIN = 'Portugal']{
+      text-dy: -150;
+      text-dx: 370;
+    }
+    }
+  
+  
+  [zoom=5]{
+      #countries3[ADMIN = 'Spain']{
+      text-dy: -140;
+      text-dx: 100;
+    }  
+  
+      #countries3[ADMIN = 'Portugal']{
+      text-dy: -40;
+      text-dx: 160;
+    }
+    }
+  
+    [zoom=4]{
+      #countries3[ADMIN = 'Spain']{
+      text-dy: -70;
+      text-dx: 45;
+    }  
+  
+      #countries3[ADMIN = 'Portugal']{
+      text-dy: -18;
+      text-dx: 70;
+    }
+    }
+  
+      [zoom=3]{
+      #countries3[ADMIN = 'Spain']{
+      text-dy: -20;
+      text-dx: 20;
+    }  
+  
+      #countries3[ADMIN = 'Portugal']{
+      text-dy: -10;
+      text-dx: 40;
+    }
+    }
+  
+  
+  
+  
+  
+       #countries3[ADMIN = 'Israel']{
+      text-dy: 12;
+    } 
+  
+         #countries3[ADMIN = 'Egypt']{
+      text-dy: -16;
+    } 
+  
+         #countries3[ADMIN = 'Kuwait']{
+      text-dy: -5;
+    } 
+  
+     #countries3[ADMIN = 'Bahrain']{
+      text-dy: -10;
+    }  
+  
+     #countries3[ADMIN = 'Qatar']{
+      text-dy: 10;
+    }  
+  
+   #countries3[ADMIN = 'United Arab Emirates']{
+      text-dy: 10;
+    }  
+  
+    #countries3[ADMIN = 'United Arab Emirates']{
+      text-dx: 0;
+    }  
+  [zoom<4]{
+        #countries3[ADMIN = 'Georgia']{
+      text-dy: -3;
+    }  
+  }
+  
+  [zoom=4]{
+   #countries3[ADMIN = 'Jordan']{
+      text-dy: 4;}
+        #countries3[ADMIN = 'West Bank']{
+      text-dy: -3;
+        }
+    #countries3[ADMIN = 'Lebanon']{
+      text-dy: 3;
+        }
+        #countries3[ADMIN = 'Israel']{
+      text-dy: 16;
+        }
+    
+            #countries3[ADMIN = 'Oman']{
+      text-dy: 3;
+        }
+            #countries3[ADMIN = 'Libya']{
+      text-dy: -4;
+        }
+    #countries3[ADMIN = 'Algeria']{
+      text-dy: -4;
+        }
+    #countries3[ADMIN = 'Mauritania']{
+      text-dy: -4;
+        }
+  }
+  
+  [zoom=6]{
+   #countries3[ADMIN = 'Iraq']{
+      text-dy: -22;}
+        #countries3[ADMIN = 'Jordan']{
+      text-dy: -10;
+        }
+    #countries3[ADMIN = 'Saudi Arabia']{
+      text-dy: -10;
+        }
+        #countries3[ADMIN = 'Uzbekistan']{
+      text-dy: -8;
+        }
+    
+            #countries3[ADMIN = 'Tajikistan']{
+      text-dy: -8;
+        }
+            #countries3[ADMIN = 'Kyrgyzstan']{
+      text-dy: -8;
+        }
+  }
+  
+    
+  [zoom=7]{
+   #countries3[ADMIN = 'Egypt']{
+      text-dy: -40;}
+        #countries3[ADMIN = 'Jordan']{
+      text-dy: 30;
+        }
+    #countries3[ADMIN = 'Iraq']{
+      text-dy: -40;
+        }
+        #countries3[ADMIN = 'Yemen']{
+      text-dy: -8;
+        }
+    
+            #countries3[ADMIN = 'Oman']{
+      text-dy: -18;
+        }
+            #countries3[ADMIN = 'United Arab Emirates']{
+      text-dy: 18;
+        }
+    
+                #countries3[ADMIN = 'Tajikistan']{
+      text-dy: -18;
+        }
+    
+                #countries3[ADMIN = 'Kyrgyzstan']{
+      text-dy: -10;
+        }
+    
+                #countries3[ADMIN = 'Uzbekistan']{
+      text-dy: -13;
+        }
+  }
+  
+  [zoom>5]{ 
+  text-size: 18;  
+    }
+  
+  [zoom=5]{
+    text-size: 12;
+    }
+  
+   [zoom< 4] {
+    text-size: 7; 
+    text-halo-radius: .7; 
+/*    text-allow-overlap: false;*/
+    }
+  
+  [zoom< 3] {
+    text-size: 0;
+    text-halo-radius: 0;
+    }
+
+  [zoom< 2] {
+    text-size: 3;
+    }
+  
+  [zoom< 6] {
+    text-transform:uppercase;
+    }
+
+  text-character-spacing:1;
+  text-wrap-width:40;
+  text-line-spacing:2;
+  text-avoid-edges: false; 
+  text-placement-type: simple;  
+
+ #countries3[ADMIN = 'Baykonur Cosmodrome'],
+  #countries3[ADMIN = 'Dhekelia Sovereign Base Area'],
+   #countries3[ADMIN = 'Cyprus No Mans Area'],
+    #countries3[ADMIN = 'Northern Cyprus'],
+     #countries3[ADMIN = 'Dhekelia Sovereign Base Area'],       
+      #countries3[ADMIN = 'Akrotiri Sovereign Base Area']
+       #countries3[ADMIN = 'Gibraltar'],
+        #countries3[NAME = 'Akrotiri'],{
+  text-size: 0;
+  text-halo-radius: 0;
+  }
+  
+}
+  
+
+

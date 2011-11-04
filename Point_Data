@@ -1,0 +1,35 @@
+/*@sans_bold:"Droid Sans Bold","Arial Bold","DejaVu Sans Bold";*/
+
+@markop: 0.7;
+
+#Data_Points11-4{
+
+      marker-height: 4;
+      marker-type: arrow;
+      
+      marker-fill: #fff;
+      marker-allow-overlap: true; 
+      marker-spacing: 1;
+      marker-height: 8;
+      marker-opacity: @markop;
+      marker-line-opacity: @markop; 
+    
+    [zoom < 4]{
+      marker-height: 0;
+    }
+    
+    [zoom < 6]{
+      marker-allow-overlap: false;
+
+    } 
+
+  [zoom = 6]{
+    marker-height: 5;
+      }
+    
+      [zoom = 7]{
+    marker-height: 6;
+      }
+}
+
+
