@@ -6,16 +6,24 @@
     85.05112877980659
   ],
   "center": [
-    49.59503173828124,
-    17.829106016272632,
-    5
+    11.494445800781252,
+    32.89515546480396,
+    7
   ],
   "format": "png",
   "interactivity": {
     "layer": "Data_Points11-4",
     "template_teaser": "[DATE] <BR><b>[TITLE]</b><BR>\n\n<em>[CITY][COUNTRY]</em>",
     "template_full": "[DATE] <BR><b>[TITLE]</b><BR>\n[BODY] [SOURCE]<BR>\n<em>[CITY][COUNTRY]</em>",
-    "template_location": ""
+    "template_location": "",
+    "fields": [
+      "DATE",
+      "TITLE",
+      "BODY",
+      "SOURCE",
+      "CITY",
+      "COUNTRY"
+    ]
   },
   "minzoom": 2,
   "maxzoom": 7,

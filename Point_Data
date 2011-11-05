@@ -4,7 +4,7 @@
 
 #Data_Points11-4{
 
-      marker-height: 4;
+      marker-height: 5;
       marker-type: arrow;
       
       marker-fill: #fff;
@@ -12,7 +12,8 @@
       marker-spacing: 1;
       marker-height: 8;
       marker-opacity: @markop;
-      marker-line-opacity: @markop; 
+      marker-line-color: #686868;
+    /*  marker-line-opacity: @markop; */
     
     [zoom < 4]{
       marker-height: 0;
@@ -23,10 +24,6 @@
 
     } 
 
-  [zoom = 6]{
-    marker-height: 5;
-      }
-    
       [zoom = 7]{
     marker-height: 6;
       }
