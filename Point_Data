@@ -1,11 +1,18 @@
-/*@sans_bold:"Droid Sans Bold","Arial Bold","DejaVu Sans Bold";*/
 
+/*opacity for Datapoint dots. Note that currently this only effects
+the opacity of the inside of the dot, and not the border line around it.
+See commented out line below "marker-line-opacity"*/
 @markop: 0.7;
+
+
+/*data point information. Title below should be 
+the name of the most current geojson layer derived from the 
+CSV section of the chronology.mei.edu website*/
 
 #Data_Points11-4{
 
       marker-height: 5;
-      marker-type: arrow;
+      marker-type: arrow; /*does not seem to affect the datapoints. */
       
       marker-fill: #fff;
       marker-allow-overlap: true; 
@@ -14,17 +21,23 @@
       marker-opacity: @markop;
       marker-line-color: #686868;
     /*  marker-line-opacity: @markop; */
-    
+   
+  /*markers do not show up for zoom levels 3, 2 or 1. */
     [zoom < 4]{
       marker-height: 0;
     }
     
+  /*at zoom levels 1-5 markers are not allowed to overlap. This reduces clutter 
+  when viewing the map from these lower zoom levels. if two dots touch when at 
+  zoom level 3 for example, one of them disappears. At greater zoom levels This feature is turned off, 
+  allowing all markers to show and overlap at zoom levels 6, 7, 8, and greater. */
     [zoom < 6]{
       marker-allow-overlap: false;
-
     } 
-
-      [zoom = 7]{
+  
+  /*By the time that a user is at zoom level 7 or greater markers have plenty of space 
+  inbetween, therefore the larger marker size allows easier mousing over and clicking without unecessary overlap*/
+      [zoom > 6]{
     marker-height: 6;
       }
 }

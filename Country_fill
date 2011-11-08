@@ -1,12 +1,5 @@
 
- /*Oranges */
-@level1: #d15300;
-@level2: #ff9320;
-@level3: #ffbd42;
-@level4: #ffd182;
-
-
-/*Red, Orange, Yellow, Green */ 
+/*colors from the earlier version of the map: Red, Orange, Yellow, Green */ 
 /*
 @level1: #41ff00;
 @level2: #f1ff00;
@@ -14,8 +7,19 @@
 @level4: #ff0000;
 */
 
+
+ /* Oranges */
+@level1: #d15300;
+@level2: #ff9320;
+@level3: #ffbd42;
+@level4: #ffd182;
+
+/*Defines the opacity of the country fill that is layered over the 
+"Topography" Raster layer. I (miles minton) recommend 0.55 */
 @op: 0.55;
 
+/*defines the fill for each of the countries. If a country is not included in this list
+it will be the color of the raster image background, gray*/
 #countries[NAME= 'Afghanistan'] {
   polygon-fill: @level3;
   polygon-opacity: @op;
@@ -193,7 +197,8 @@
 }
 
 /*because the map is completely covered by 
-the geotiff, the following command does nothing. 
+the geotiff (Topography Raster, the following command does nothing. If the raster did not include
+data for the ocean, this command would 
 It might be possible to layer the map so as 
 to adjust the ocean color*/
 

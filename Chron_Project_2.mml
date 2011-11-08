@@ -6,9 +6,9 @@
     85.05112877980659
   ],
   "center": [
-    11.494445800781252,
-    32.89515546480396,
-    7
+    48.74908447265626,
+    31.60368570849989,
+    5
   ],
   "format": "png",
   "interactivity": {
@@ -146,5 +146,5 @@
   ],
   "description": "",
   "attribution": "",
-  "legend": "<div align=\"center\">\n\nMouse-over or click white event points<br>\nzoom-in fully to view city labels<br>\n<em>data represent events <br>from August 1st to November 4th\n\n</em></div>"
+  "legend": "<div align=\"center\">\n\nMouse-over or click white event points<br>\nzoom-in fully to view city labels<br>\n<em>data represent events <br>August 1st through November 4th\n\n</em></div>"
 }
