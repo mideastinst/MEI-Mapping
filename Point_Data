@@ -7,12 +7,12 @@ See commented out line below "marker-line-opacity"*/
 
 /*data point information. Title below should be 
 the name of the most current geojson layer derived from the 
-CSV section of the chronology.mei.edu website*/
+CSV section of the chronology.mei.edu/csv website*/
 
 #Data_Points11-8{
 
-      marker-height: 5;
-      marker-type: arrow; /*does not seem to affect the datapoints. */
+    marker-height: 5;
+    /*  marker-type: arrow; does not seem to affect the datapoints. */
       
       marker-fill: #fff;
       marker-allow-overlap: true; 
@@ -27,18 +27,30 @@ CSV section of the chronology.mei.edu website*/
       marker-height: 0;
     }
     
-  /*at zoom levels 1-5 markers are not allowed to overlap. This reduces clutter 
-  when viewing the map from these lower zoom levels. if two dots touch when at 
-  zoom level 3 for example, one of them disappears. At greater zoom levels This feature is turned off, 
-  allowing all markers to show and overlap at zoom levels 6, 7, 8, and greater. */
+  /*at zoom levels 1-5 markers are not 
+  allowed to overlap. This reduces clutter 
+  when viewing the map from these lower 
+  zoom levels. if two dots touch when at 
+  zoom level 3 for example, one of them 
+  disappears. At greater zoom levels This 
+  feature is turned off, 
+  allowing all markers to show and 
+  overlap at zoom levels 6, 7 and greater. */
     [zoom < 6]{
       marker-allow-overlap: false;
     } 
   
-  /*By the time that a user is at zoom level 7 or greater markers have plenty of space 
-  inbetween, therefore the larger marker size allows easier mousing over and clicking without unecessary overlap*/
-      [zoom > 6]{
+  /*By the time that a user is at zoom level 6 
+  or greater markers have plenty of space 
+  inbetween, therefore the larger marker size 
+  allows easier mousing over and clicking without 
+  unecessary overlap*/
+      [zoom > 5]{
     marker-height: 6;
+      }
+  /*points get very large at maximum zoom level to increase usability*/
+      [zoom > 6]{
+    marker-height: 7;
       }
 }
 

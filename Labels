@@ -12,9 +12,9 @@
   text-label-position-tolerance: 100;
   text-character-spacing: 1;
   
-/*  Cities that overlapped on the map and needed to be removed. 
+/*  Cities that overlapped on the map and needed to be removed for view ability. 
     If you would like to remove a city from the map, copy the format below
-    and include the cities EXACT name. */
+    and include the city's EXACT name. */
   #Cities[NAME = 'Al Khalil'],
   #Cities[NAME = 'Nablus'],
   #Cities[NAME = 'Ramla'],
@@ -31,7 +31,7 @@
   text-avoid-edges: true;
 }
 
-/* country name layer*/
+/* country name layer adds country names to map*/
 #countries3 [zoom > 2]{
   text-name:'[NAME]';
   text-face-name:@sans_bold;
@@ -69,6 +69,9 @@
       text-dy: -10;
       text-dx: 10;
     }  
+  
+  /*spain and potrugal lavels were far off from where they should be
+  therefore they require adjustments for all zoom levels. */
   
    [zoom=7]{
       #countries3[ADMIN = 'Spain']{
@@ -268,9 +271,11 @@
   text-character-spacing:1;
   text-wrap-width:40;
   text-line-spacing:2;
+  /*simple algorithms to better place country titles*/
   text-avoid-edges: false; 
   text-placement-type: simple;  
 
+  
 /* remove unecessary country names */
  #countries3[ADMIN = 'Baykonur Cosmodrome'],
   #countries3[ADMIN = 'Dhekelia Sovereign Base Area'],
@@ -279,7 +284,8 @@
      #countries3[ADMIN = 'Dhekelia Sovereign Base Area'],       
       #countries3[ADMIN = 'Akrotiri Sovereign Base Area']
        #countries3[ADMIN = 'Gibraltar'],
-        #countries3[NAME = 'Akrotiri'],{
+        #countries3[NAME = 'Akrotiri'],
+    {
   text-size: 0;
   text-halo-radius: 0;
   }

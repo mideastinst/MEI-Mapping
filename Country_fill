@@ -1,4 +1,8 @@
 
+#Topography{
+  raster-opacity: 1;
+}
+
 /*colors from the earlier version of the map: Red, Orange, Yellow, Green */ 
 /*
 @level1: #41ff00;
@@ -15,7 +19,7 @@
 @level4: #ffd182;
 
 /*Defines the opacity of the country fill that is layered over the 
-"Topography" Raster layer. I (miles minton) recommend 0.55 */
+"Topography" Raster layer. I (miles) recommend 0.55 */
 @op: 0.55;
 
 /*defines the fill for each of the countries. If a country is not included in this list
@@ -111,7 +115,7 @@ it will be the color of the raster image background, gray*/
 }
 
 #countries[NAME= 'Mauritania'] {
-  polygon-fill: @level4;
+  polygon-fill: @level1;
   polygon-opacity: @op;
 }
 
@@ -191,17 +195,3 @@ it will be the color of the raster image background, gray*/
 }
 
 
-#Topography{
-  raster-opacity: 1;
-/*  z-index: -1;*/
-}
-
-/*because the map is completely covered by 
-the geotiff (Topography Raster, the following command does nothing. If the raster did not include
-data for the ocean, this command would 
-It might be possible to layer the map so as 
-to adjust the ocean color*/
-
-Map {
-  background-color: #838383;
-}
