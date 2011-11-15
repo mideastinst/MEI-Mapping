@@ -6,24 +6,16 @@
     85.05112877980659
   ],
   "center": [
-    48.74908447265626,
-    31.60368570849989,
-    5
+    34.77447509765626,
+    30.634958017060818,
+    7
   ],
   "format": "png",
   "interactivity": {
-    "layer": "Data_Points11-4",
+    "layer": "Data_Points11-8",
     "template_teaser": "[DATE] <BR><b>[TITLE]</b><BR>\n\n<em>[CITY][COUNTRY]</em>",
     "template_full": "[DATE] <BR><b>[TITLE]</b><BR>\n[BODY] [SOURCE]<BR>\n<em>[CITY][COUNTRY]</em>",
-    "template_location": "",
-    "fields": [
-      "DATE",
-      "TITLE",
-      "BODY",
-      "SOURCE",
-      "CITY",
-      "COUNTRY"
-    ]
+    "template_location": ""
   },
   "minzoom": 2,
   "maxzoom": 7,
@@ -99,25 +91,12 @@
     },
     {
       "geometry": "point",
-      "name": "Data_Points11-3",
-      "id": "Data_Points11-3",
+      "name": "Data_Points11-8",
+      "id": "Data_Points11-8",
       "srs": "",
       "class": "",
       "Datasource": {
-        "file": "/Users/Miles/Documents/MapBox/data/chron11-3.geojson"
-      }
-    },
-    {
-      "geometry": "point",
-      "name": "Data_Points11-4",
-      "id": "Data_Points11-4",
-      "srs": "",
-      "class": "",
-      "Datasource": {
-        "file": "/Users/Miles/Documents/MapBox/data/chron11-4.geojson",
-        "id": "Data_Points11-4",
-        "project": "Chron_Project_2",
-        "srs": null
+        "file": "/Users/Miles/Documents/MapBox/data/chron11-8.geojson"
       }
     },
     {
