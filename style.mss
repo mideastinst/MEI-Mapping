@@ -5,7 +5,7 @@
     line-color: #000;
     line-width: 1;
     line-join: round;
-/* unsuccessful attempts to remove the ciricle in Kazakhstan called the 
+/* unsuccessful attempts to remove the circle in Kazakhstan called the 
     Baykonur Cosmodrome*/
   #countries [NAME_SORT = 'Baykonur Cosmodrome']{
     line-width: 0;
