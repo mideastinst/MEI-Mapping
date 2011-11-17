@@ -121,7 +121,8 @@
       }
     }
   ],
-  "description": "",
+  "description": "Chronology display for August 2011 to November 2011",
   "attribution": "",
-  "legend": "<div align=\"center\">\n\nMouse-over or click white event points<br>\nzoom-in fully to view city labels<br>\n<em>data represent events <br>August 1st through November 4th\n\n</em></div>"
+  "legend": "<div align=\"center\">\n\nMouse-over or click white event points<br>\nzoom-in fully to view city labels<br>\n<em>data represent events <br>August 1st through November 4th\n\n</em></div>",
+  "name": "2011-aug-nov"
 }
