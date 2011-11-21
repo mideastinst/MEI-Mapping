@@ -1,31 +1,23 @@
 {
   "bounds": [
-    -180,
-    -85.05112877980659,
-    180,
-    85.05112877980659
+    -26,
+    0,
+    94,
+    58
   ],
   "center": [
-    -8.863220214843762,
-    31.191070618296855,
-    7
+    29.676818847656246,
+    28.078644626998003,
+    5
   ],
   "format": "png",
   "interactivity": {
     "layer": "Data_Points11-8",
-    "template_teaser": "[DATE] <BR><b>[TITLE]</b><BR>\n\n<em>[CITY][COUNTRY]</em>",
-    "template_full": "[DATE] <BR><b>[TITLE]</b><BR>\n[BODY] [SOURCE]<BR>\n<em>[CITY][COUNTRY]</em>",
-    "template_location": "",
-    "fields": [
-      "DATE",
-      "TITLE",
-      "BODY",
-      "SOURCE",
-      "CITY",
-      "COUNTRY"
-    ]
+    "template_teaser": "{{{DATE}}} <BR><b>{{{TITLE}}}</b><BR>\n\n<em>{{{CITY}}}{{{COUNTRY}}}</em>",
+    "template_full": "{{{DATE}}} <BR><b>{{{TITLE}}}</b><BR>\n{{{BODY}}} {{{SOURCE}}}<BR>\n<em>{{{CITY}}}{{{COUNTRY}}}</em>",
+    "template_location": ""
   },
-  "minzoom": 2,
+  "minzoom": 3,
   "maxzoom": 7,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
